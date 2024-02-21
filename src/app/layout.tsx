@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 
-import './globals.css';
+import '@/styles/globals.css';
 
 import { fontSans } from 'lib/fonts';
 
