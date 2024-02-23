@@ -1,6 +1,13 @@
 # 🚀 NextJsLaunchpad
 
-Your comprehensive toolkit for developing Next.js projects. With NextJsLaunchpad, you get a robust foundation equipped with essential tools, configurations, and best practices to streamline your development workflow. Say goodbye to setup headaches and hello to consistent code quality. Elevate your Next.js projects with NextJsLaunchpad.
+The comprehensive toolkit for developing Next.js projects.
+
+With NextJsLaunchpad, you get
+
+- a robust foundation equipped with essential tools,
+- configurations, and best practices to streamline your development workflow.
+
+Say goodbye to setup headaches and hello to consistent code quality. Elevate your Next.js projects with NextJsLaunchpad.
 
 ## ✨ Features
 
@@ -12,3 +19,46 @@ Your comprehensive toolkit for developing Next.js projects. With NextJsLaunchpad
 - **Prettier Plugin Tailwindcss**: Automatic sorting of tailwind classnames using the official prettier plugin.
 - **Prettier Plugin Sort Imports**: Organize import declarations alphabetically within groups, which can help improve readability when working on larger projects.
 - **Husky**: Ensure code quality and prevent bad commits with pre-commit hooks powered by Husky.
+
+## Getting Started
+
+> Usage
+
+```bash
+npx create-next-app -e https://github.com/CreoWis/next-js-launchpad
+```
+
+<!-- Project should be public for the above command to work -->
+
+## 💡 Authors
+
+- [@Chhakuli Zingare](https://github.com/chhakuli123)
+- [@Joy Poddar](https://github.com/joypoddar)
+- [@Tapas Adhikary](https://github.com/atapas)
+
+## 🤝 Contributing
+
+Contributions are always welcome!
+
+See `contributing.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
+<!-- TODO: add contributing.md -->
+
+## 🙏 Support Us
+
+This is an OSS project by team [CreoWis](https://www.creowis.com/). We need all the support we can get. Please give this project a ⭐️ to encourage and show that you liked it.
+
+If you found the project helpful, consider supporting us with a coffee.
+
+<a href="#">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50px">
+</a>
+
+<!-- TODO : Add buymecoffee link -->
+
+## Acknowledgements
+
+- [Next.JS](https://nextjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
