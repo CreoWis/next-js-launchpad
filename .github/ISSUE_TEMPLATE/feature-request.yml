@@ -1,0 +1,43 @@
+name: Feature
+description: Add a feature request
+title: '[Feature Request]: '
+labels: ['enhancement']
+assignees: ['']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide the issue details in below fields.
+
+  - type: textarea
+    id: problem-details
+    attributes:
+      label: Feature details
+      description: Tell us in details about the problem.
+    validations:
+      required: true
+  
+  - type: textarea
+    id: suggested-solution
+    attributes:
+      label: Suggested Solution
+      description: Do you have solution in mind? Please post here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: areas
+    attributes:
+      label: Affected areas
+      placeholder: List down the affected areas
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct]
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
