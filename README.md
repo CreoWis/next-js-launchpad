@@ -50,11 +50,9 @@ This is an OSS project by team [CreoWis](https://www.creowis.com/). We need all 
 
 If you found the project helpful, consider supporting us with a coffee.
 
-<a href="#">
+<a href="https://www.buymeacoffee.com/creowis">
     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50px">
 </a>
-
-<!-- TODO : Add buymecoffee link -->
 
 ## Acknowledgements
 
