@@ -40,11 +40,9 @@ npx create-next-app -e https://github.com/CreoWis/next-js-launchpad
 
 Contributions are always welcome!
 
-See `contributing.md` for ways to get started.
+See [CONTRIBUTING.md](https://github.com//next-js-launchpad/blob/main/CONTRIBUTING.md) for ways to get started.
 
-Please adhere to this project's `code of conduct`.
-
-<!-- TODO: add contributing.md -->
+Please adhere to this project's [code of conduct](https://github.com//next-js-launchpad/blob/main/CODE_OF_CONDUCT.md).
 
 ## 🙏 Support Us
 
