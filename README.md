@@ -1,3 +1,18 @@
+<a href="https://github.com/CreoWis/next-js-launchpad/blob/master/LICENSE" target="blank"><img src="https://img.shields.io/github/license/CreoWis/next-js-launchpad?style=flat-square
+" alt="License" /></a>
+<a href="https://github.com/CreoWis/next-js-launchpad/fork" target="blank">
+<img src="https://img.shields.io/github/forks/CreoWis/next-js-launchpad?style=flat-square" alt="next-js-launchpad forks"/>
+</a>
+<a href="https://github.com/CreoWis/next-js-launchpad/stargazers" target="blank">
+<img src="https://img.shields.io/github/stars/CreoWis/next-js-launchpad?style=flat-square" alt="next-js-launchpad stars"/>
+</a>
+<a href="https://github.com/CreoWis/next-js-launchpad/issues" target="blank">
+<img src="https://img.shields.io/github/issues/CreoWis/next-js-launchpad?style=flat-square" alt="next-js-launchpad issues"/>
+</a>
+<a href="https://github.com/CreoWis/next-js-launchpad/pulls" target="blank">
+<img src="https://img.shields.io/github/issues-pr/CreoWis/next-js-launchpad?style=flat-square" alt="next-js-launchpad pull-requests"/>
+</a>
+
 # 🚀 NextJsLaunchpad
 
 The comprehensive toolkit for developing Next.js projects.
