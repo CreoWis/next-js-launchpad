@@ -2,8 +2,8 @@ name: Update Dependencies
 
 on:
   schedule:
-    - cron: '0 0 * * 0'
-  workflow_dispatch:
+    - cron: '0 0 * * 0' 
+  workflow_dispatch: 
 
 jobs:
   update:
@@ -15,14 +15,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '20' 
 
       - name: Install dependencies
         run: npm ci
 
       - name: Check for updates
+        id: check
         run: |
-          npm outdated --json > outdated.json  || { echo "npm outdated failed with exit code $?"; exit 1; }
+          npm outdated --json > outdated.json
           if [ -s outdated.json ]; then
             echo "Updates found"
             echo "::set-output name=updates_found::true"
@@ -30,7 +31,14 @@ jobs:
             echo "No updates found"
             echo "::set-output name=updates_found::false"
           fi
-        id: check
+
+      - name: Update dependencies
+        if: steps.check.outputs.updates_found == 'true'
+        run: |
+          npm update
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git commit -am "Update dependencies"
 
       - name: Create Pull Request
         if: steps.check.outputs.updates_found == 'true'
