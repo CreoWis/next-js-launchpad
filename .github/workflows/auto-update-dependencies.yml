@@ -33,7 +33,7 @@ jobs:
           fi
 
       - name: Update dependencies
-        if: steps.check.outputs.updates_found == 'true'
+        if: env.updates_found == 'true'
         run: |
           npm update
           git config --global user.email "action@github.com"
@@ -41,7 +41,7 @@ jobs:
           git commit -am "Update dependencies"
 
       - name: Create Pull Request
-        if: steps.check.outputs.updates_found == 'true'
+        if: env.updates_found == 'true'
         uses: peter-evans/create-pull-request@v3
         with:
           title: 'Update dependencies'
