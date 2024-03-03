@@ -77,8 +77,8 @@ jobs:
       - name: Debug File Path
         run: |
           pwd
-          ls -l /path/to/directory
-          touch /path/to/directory/test.txt
+          ls -l 
+          touch test.txt
 
       - name: Check for updates
         id: check
