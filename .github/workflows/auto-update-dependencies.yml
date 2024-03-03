@@ -74,16 +74,10 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Debug File Path
-        run: |
-          pwd
-          ls -l 
-          touch test.txt
-
       - name: Check for updates
         id: check
         run: |
-          npm outdated --json > outdated.json
+          npm outdated --json > outdated.json  || echo "npm outdated command failed"
           if [ -s outdated.json ]; then
             echo "Updates found"
             echo "::set-output name=updates_found::true"
