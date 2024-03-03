@@ -26,10 +26,10 @@ jobs:
           npm outdated --json > outdated.json  || echo "npm outdated command failed"
           if [ -s outdated.json ]; then
             echo "Updates found"
-            echo "::set-output name=updates_found::true"
+            echo "updates_found=true" >> $GITHUB_ENV
           else
             echo "No updates found"
-            echo "::set-output name=updates_found::false"
+             echo "updates_found=false" >> $GITHUB_ENV
           fi
 
       - name: Update dependencies
