@@ -27,7 +27,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body
-        className={`min-h-screen font-sans antialiased ${fontSans.variable}`}
+        className={`min-h-screen antialiased ${fontSans.className}`}
       >
         {children}
       </body>
