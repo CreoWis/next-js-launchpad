@@ -14,7 +14,7 @@
     "lint-prettier": "npm run lint:check && npm run prettier:check"
   },
   "lint-staged": {
-    "src/**/*.ts": "npm lint-prettier"
+    "src/**/*.ts": "npm run lint-prettier"
   },
   "dependencies": {
     "next": "^14.1.0",
