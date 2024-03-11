@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import Footer from '@/components/footer';
 import CopyButton from '@/components/copy-button';
-
+import Footer from '@/components/footer';
 
 export default function Home() {
   return (

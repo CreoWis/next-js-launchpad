@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+type IconProps = React.HTMLAttributes<SVGElement>;
+
 export const CopyButton = () => {
   const [tick, setTick] = useState(false);
 
@@ -31,7 +33,7 @@ export const CopyButton = () => {
   );
 };
 
-function CopyIcon(props: any) {
+function CopyIcon(props: IconProps) {
   return (
     <svg
       {...props}
@@ -51,7 +53,7 @@ function CopyIcon(props: any) {
   );
 }
 
-function TickIcon(props: any) {
+function TickIcon(props: IconProps) {
   return (
     <svg
       {...props}
