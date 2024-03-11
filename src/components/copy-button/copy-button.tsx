@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function CopyButton() {
+export const CopyButton = () => {
   const [tick, setTick] = useState(false);
 
   const handleCopy = () => {
@@ -20,7 +20,7 @@ export default function CopyButton() {
       </span>
       {tick ? (
         <button className="pr-1">
-          <TickIcon className="h-4 w-4"/>
+          <TickIcon className="h-4 w-4" />
         </button>
       ) : (
         <button className="cursor-pointer hover:scale-105 pr-1" onClick={handleCopy}>
@@ -29,7 +29,7 @@ export default function CopyButton() {
       )}
     </div>
   );
-}
+};
 
 function CopyIcon(props: any) {
   return (
