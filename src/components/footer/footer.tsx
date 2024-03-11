@@ -1,6 +1,4 @@
+export function Footer() {
+  return <footer>This is a footer</footer>;
+}
 
-export const Footer = () => {
-    return (
-        <footer>This is a footer</footer>
-    );
-};

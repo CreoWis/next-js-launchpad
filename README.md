@@ -53,7 +53,9 @@ npx create-next-app -e https://github.com/CreoWis/next-js-launchpad
 ├── public
 └── src
     ├── app
-    ├── components
+    └── components
+        ├── footer
+        └── ui
     ├── config
     ├── constants
     ├── context
@@ -64,12 +66,12 @@ npx create-next-app -e https://github.com/CreoWis/next-js-launchpad
     ├── queries
     ├── services
     ├── store
-    ├── utils
+    └── utils
 ├── styles
 ├── types
 ```
 
-\***\*tests\*\***: This folder contains all 'tests'.
+**\_\_tests\_\_**: This folder contains all 'tests'.
 
 **lib**: This folder may contain utility functions that can be converted later into packages that are used across multiple applications.
 
@@ -77,13 +79,7 @@ npx create-next-app -e https://github.com/CreoWis/next-js-launchpad
 
 **src/components**: This directory contains your UI components. It's further subdivided into ui for generic UI components and shared for components that might be reused across different parts of your application.
 
-> Conventions for src/components
-
-- ui components will go inside the ui folder
-- each component will be a folder of its own. Sub-components, if any will reside in the same folder. Each such folder will have index.ts file which will export all components.
-- separate folder for routes. E.g. about-us route will have a folder by the same name inside component folder which will have other components inside it.
-
-Example: take a look at the header and footer component.
+> [Conventions for src/components](#convention)
 
 **src/constants**: As the name suggests this folder contains constants.
 
@@ -95,9 +91,7 @@ Example: take a look at the header and footer component.
 
 **src/hooks**: This directory may house custom hooks that are used throughout your application.
 
-> Conventions for src/hooks
-
-- `camelCase` beginning with the word _use_ e.g. useFetchData: A generic fetching hook for making HTTP requests to a specified endpoint.
+> [Conventions for src/hooks](#convention2)
 
 **src/modules**: Modules which is also synonymous with 'sections/features' are logical groupings of code that make up the larger pages.
 
@@ -131,15 +125,25 @@ const ORDER_STATUS = {
   } as const satisfies OrderStatus;
 ```
 
-- component names -> `PascalCase` E.g. _export const Header = () => {}_
+- component names -> `PascalCase` E.g. _export function Footer() {}_
 - types should have `.d.ts` extension. E.g. _root.d.ts_
 - use arrow functions wherever possible.
-- ui folder contains granular level components like _button_, _dialog_, _input_ etc which can be used to build other components.
+- ui folder can contain granular level components like _button_, _dialog_, _input_ etc which can be used to build other components.
 - use given folders for various kinds of files. E.g. _types should reside in types folder_
 
-For granular level convention, read the README in specific folder.
+NOTE: Check granular level README for overiding rules (if any). If there are cases where industry standards over-ride the rules mentioned above, please feel free to use them. For example convention for naming hooks.
 
-NOTE: Check specific folder README for overiding rules (if any). If there are cases where industry standards over-ride the rules mentioned above, please feel free to use them. For example convention for naming hooks.
+> <a id="convention">Conventions for src/components</a>
+
+- ui components will go inside the ui folder
+- each component will be a folder of its own. Sub-components, if any will reside in the same folder. Each such folder will have index.ts file which will export all components. E.g. `export { Footer as default } from './footer';` 
+- separate folder for routes. E.g. about-us route will have a folder by the same name inside component folder which will have other components inside it.
+
+Example: take a look at the `footer` component.
+
+> <a id="convention2">Conventions for src/hooks</a>
+
+- `camelCase` beginning with the word _use_ e.g. useFetchData: A generic fetching hook for making HTTP requests to a specified endpoint.
 
 ## 💡 Authors
 
