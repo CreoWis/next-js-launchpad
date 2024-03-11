@@ -131,12 +131,12 @@ const ORDER_STATUS = {
 - ui folder can contain granular level components like _button_, _dialog_, _input_ etc which can be used to build other components.
 - use given folders for various kinds of files. E.g. _types should reside in types folder_
 
-NOTE: Check granular level README for overiding rules (if any). If there are cases where industry standards over-ride the rules mentioned above, please feel free to use them. For example convention for naming hooks.
+NOTE: Check granular level conventions below for overiding rules (if any). If there are cases where industry standards over-ride the rules mentioned above, please feel free to use them. For example convention for naming hooks.
 
 > <a id="convention">Conventions for src/components</a>
 
 - ui components will go inside the ui folder
-- each component will be a folder of its own. Sub-components, if any will reside in the same folder. Each such folder will have index.ts file which will export all components. E.g. `export { Footer as default } from './footer';` 
+- each component will be a folder of its own. Sub-components, if any will reside in the same folder. Each such folder will have index.ts file which will export all components. E.g. `export { Footer as default } from './footer';`
 - separate folder for routes. E.g. about-us route will have a folder by the same name inside component folder which will have other components inside it.
 
 Example: take a look at the `footer` component.
