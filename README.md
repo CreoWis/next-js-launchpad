@@ -145,12 +145,6 @@ Example: take a look at the `footer` component.
 
 - `camelCase` beginning with the word _use_ e.g. useFetchData: A generic fetching hook for making HTTP requests to a specified endpoint.
 
-## 💡 Authors
-
-- [@Chhakuli Zingare](https://github.com/chhakuli123)
-- [@Joy Poddar](https://github.com/joypoddar)
-- [@Tapas Adhikary](https://github.com/atapas)
-
 ## 🤝 Contributing
 
 Contributions are always welcome!
