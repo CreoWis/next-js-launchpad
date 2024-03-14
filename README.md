@@ -1,6 +1,6 @@
 <a href="https://github.com/CreoWis/next-js-launchpad/blob/master/LICENSE" target="blank"><img src="https://img.shields.io/github/license/CreoWis/next-js-launchpad?style=flat-square" alt="License" /></a>
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <a href="https://github.com/CreoWis/next-js-launchpad/fork" target="blank">
 <img src="https://img.shields.io/github/forks/CreoWis/next-js-launchpad?style=flat-square" alt="next-js-launchpad forks"/>
@@ -184,6 +184,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/Rick799"><img src="https://avatars.githubusercontent.com/u/98259630?v=4?s=100" width="100px;" alt="Rajarshi"/><br /><sub><b>Rajarshi</b></sub></a><br /><a href="https://github.com/CreoWis/next-js-launchpad/commits?author=Rick799" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://nxt100.com"><img src="https://avatars.githubusercontent.com/u/11984043?v=4?s=100" width="100px;" alt="Joy Poddar"/><br /><sub><b>Joy Poddar</b></sub></a><br /><a href="https://github.com/CreoWis/next-js-launchpad/commits?author=joypoddar" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://chhakuli-zingare.netlify.app/"><img src="https://avatars.githubusercontent.com/u/103095813?v=4?s=100" width="100px;" alt="Chhakuli Zingare"/><br /><sub><b>Chhakuli Zingare</b></sub></a><br /><a href="https://github.com/CreoWis/next-js-launchpad/commits?author=chhakuli123" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/Jayakumar03"><img src="https://avatars.githubusercontent.com/u/86454250?v=4?s=100" width="100px;" alt="Jaya Kumar"/><br /><sub><b>Jaya Kumar</b></sub></a><br /><a href="https://github.com/CreoWis/next-js-launchpad/commits?author=Jayakumar03" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
