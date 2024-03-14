@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { useState } from "react";
+import { useState } from 'react';
 
 type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -8,7 +8,9 @@ export const CopyButton = () => {
   const [tick, setTick] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("npx create-next-app -e https://github.com/CreoWis/next-js-launchpad");
+    navigator.clipboard.writeText(
+      'npx create-next-app -e https://github.com/CreoWis/next-js-launchpad'
+    );
     setTick(true);
     setTimeout(() => {
       setTick(false);
@@ -16,17 +18,20 @@ export const CopyButton = () => {
   };
 
   return (
-    <div className="flex items-center bg-gray-100 rounded-lg p-2">
-      <span className="px-2 text-gray-500">
+    <div className="flex items-center rounded-lg bg-gray-100 p-2">
+      <span className="px-2 text-gray-500 lg:text-lg min-[2000px]:text-xl">
         npx create-next-app -e https://github.com/CreoWis/next-js-launchpad
       </span>
       {tick ? (
         <button className="pr-1">
-          <TickIcon className="h-4 w-4" />
+          <TickIcon className="size-4" />
         </button>
       ) : (
-        <button className="cursor-pointer hover:scale-105 pr-1" onClick={handleCopy}>
-          <CopyIcon className="w-4 h-4" />
+        <button
+          className="cursor-pointer pr-1 hover:scale-105"
+          onClick={handleCopy}
+        >
+          <CopyIcon className="size-4" />
         </button>
       )}
     </div>
