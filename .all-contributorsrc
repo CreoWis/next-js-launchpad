@@ -51,6 +51,15 @@
       "contributions": [
         "review"
       ]
+    },
+    {
+      "login": "koustov",
+      "name": "Koustov",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7145967?v=4",
+      "profile": "http://koustov.com",
+      "contributions": [
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
