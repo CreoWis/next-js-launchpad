@@ -35,7 +35,9 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <Footer />
+      <div className="flex items-end">
+        <Footer />
+      </div>
     </section>
   );
 }

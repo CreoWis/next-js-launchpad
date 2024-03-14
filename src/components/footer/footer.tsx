@@ -3,11 +3,11 @@ import Link from 'next/link';
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="items-center justify-evenly bg-gray-300 py-4 text-center text-black lg:flex">
+    <footer className="w-full items-center justify-evenly bg-gray-300 py-4 text-center text-black lg:flex">
       <p>
         Copyright &copy; {currentYear} An Open Source initiative from{' '}
         <Link
-          className="underline decoration-blue-400 decoration-2 underline-offset-2"
+          className="block underline decoration-blue-400 decoration-2 underline-offset-2 sm:inline"
           href="https://www.creowis.com/"
           target="_blank"
         >
