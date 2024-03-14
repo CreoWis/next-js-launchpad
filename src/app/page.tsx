@@ -1,43 +1,44 @@
 import Link from 'next/link';
+
 import CopyButton from '@/components/copy-button';
 import Footer from '@/components/footer';
 
 export default function Home() {
   return (
-    <>
-      <section className="min-h-[94vh] w-full py-12 lg:py-14 xl:py-24 2xl:py-28">
-        <div className="container mx-auto space-y-8 px-4 md:px-6">
-          <div className="flex flex-col items-center space-y-4 text-center">
-            <div className="space-y-4">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                NextJS Launchpad
-              </h1>
-              <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl">
-                We created a boilerplate with essential tools and best practices
-                so you can focus on building your NextJS project.
-              </p>
-            </div>
-            <div className="flex items-center py-6">
-              <CopyButton />
-            </div>
-            <p className="mx-auto max-w-[700px] text-gray-700 md:text-lg">
-              Edit <span className="font-bold">app/page.tsx</span> to start
+    <section className="grid-row-[11fr_1fr] grid h-screen">
+      <div className="container mx-auto flex flex-col justify-center space-y-8 px-4 py-12 md:px-6 lg:py-14 xl:py-24 2xl:py-28">
+        <div className="flex flex-col items-center space-y-8 text-center min-[2000px]:space-y-12">
+          <div className="space-y-4 min-[2000px]:space-y-6">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none min-[2000px]:text-8xl">
+              NextJS Launchpad
+            </h1>
+            <p className="mx-auto max-w-2xl text-gray-500 md:text-xl min-[2000px]:max-w-3xl min-[2000px]:text-2xl">
+              We created a boilerplate with essential tools and best practices
+              so you can focus on building your NextJS project.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {TECH_STACK.map((item, id) => (
-              <Link key={id} href={item.link} target="_blank">
-                <div className="transform rounded-lg bg-white p-6 shadow-md transition-transform hover:scale-105 sm:h-[192px] md:h-[164px] lg:h-[219px] xl:h-[179px] 2xl:h-[163px]">
-                  <h3 className="mb-2 text-xl font-bold">{item.name}</h3>
-                  <p className="text-gray-500">{item.description}</p>
-                </div>
-              </Link>
-            ))}
+          <div className="flex items-center">
+            <CopyButton />
           </div>
+          <p className="text-gray-700 md:text-lg min-[2000px]:text-2xl">
+            Edit <span className="font-bold">app/page.tsx</span> to start.
+          </p>
         </div>
-      </section>
-      <Footer />
-    </>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8 lg:grid-cols-4">
+          {TECH_STACK.map((item, id) => (
+            <Link key={id} href={item.link} target="_blank">
+              <div className="transform rounded-lg bg-white p-6 shadow-md transition-transform hover:scale-105 sm:h-48 md:h-40 lg:h-56 xl:h-44 2xl:h-40">
+                <h3 className="mb-2 text-xl font-bold">{item.name}</h3>
+                <p className="text-gray-500">{item.description}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+      <div className="flex items-end">
+        <Footer />
+      </div>
+    </section>
   );
 }
 
