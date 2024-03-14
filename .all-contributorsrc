@@ -1,0 +1,26 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "Rick799",
+      "name": "Rajarshi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/98259630?v=4",
+      "profile": "https://github.com/Rick799",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "next-js-launchpad",
+  "projectOwner": "CreoWis"
+}
