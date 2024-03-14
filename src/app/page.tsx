@@ -6,7 +6,7 @@ import Footer from '@/components/footer';
 export default function Home() {
   return (
     <section className="grid-row-[11fr_1fr] grid h-screen">
-      <div className="container mx-auto flex flex-col justify-center space-y-8 bg-green-300 px-4 py-12 md:px-6 lg:py-14 xl:py-24 2xl:py-28">
+      <div className="container mx-auto flex flex-col justify-center space-y-8 px-4 py-12 md:px-6 lg:py-14 xl:py-24 2xl:py-28">
         <div className="flex flex-col items-center space-y-8 text-center min-[2000px]:space-y-12">
           <div className="space-y-4 min-[2000px]:space-y-6">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none min-[2000px]:text-8xl">
@@ -35,7 +35,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="flex items-end bg-green-500">
+      <div className="flex items-end">
         <Footer />
       </div>
     </section>
