@@ -4,10 +4,16 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="items-center justify-evenly bg-gray-300 py-4 text-center text-black lg:flex">
-      <Link href="https://www.creowis.com/" target="_blank">
-        &copy; {currentYear} An Open Source initiative from CreoWis
-        Technologies.
-      </Link>
+      <p>
+        Copyright &copy; {currentYear} An Open Source initiative from{' '}
+        <Link
+          className="underline decoration-blue-400 decoration-2 underline-offset-2"
+          href="https://www.creowis.com/"
+          target="_blank"
+        >
+          CreoWis Technologies.
+        </Link>
+      </p>
       <div className="mt-4 flex justify-center gap-4 lg:mt-0 lg:gap-8">
         {SOCIAL_LINKS.map((item, id) => (
           <Link key={id} href={item.link} target="_blank">
@@ -114,4 +120,3 @@ const SOCIAL_LINKS = [
     icon: ICONS.github,
   },
 ];
-
