@@ -1,0 +1,52 @@
+name: Update Dependencies
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check for updates
+        id: check
+        run: |
+          npm outdated --json > outdated.json  || echo "npm outdated command failed"
+          if [ -s outdated.json ]; then
+            echo "Updates found"
+            echo "updates_found=true" >> $GITHUB_ENV
+          else
+            echo "No updates found"
+             echo "updates_found=false" >> $GITHUB_ENV
+          fi
+
+      - name: Update dependencies
+        if: env.updates_found == 'true'
+        run: |
+          npm update
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git commit -am "Update dependencies"
+          
+      - name: Create Pull Request
+        if: env.updates_found == 'true'
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: 'Update dependencies'
+          body: 'This PR updates the dependencies to their latest versions.'
+          branch: 'update-dependencies'
+          delete-branch: true
+          commit-message: 'Update dependencies'
+          labels: 'dependencies'
