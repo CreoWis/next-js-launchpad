@@ -40,7 +40,7 @@ export default function Home() {
   );
 }
 
-export const TECH_STACK = [
+const TECH_STACK = [
   {
     id: 1,
     name: 'Next JS',
