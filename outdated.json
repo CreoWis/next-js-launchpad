@@ -1,0 +1,135 @@
+{
+  "@ianvs/prettier-plugin-sort-imports": {
+    "current": "4.1.1",
+    "wanted": "4.2.1",
+    "latest": "4.2.1",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/@ianvs/prettier-plugin-sort-imports"
+  },
+  "@types/node": {
+    "current": "20.11.19",
+    "wanted": "20.14.8",
+    "latest": "20.14.8",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/@types/node"
+  },
+  "@types/react": {
+    "current": "18.2.57",
+    "wanted": "18.3.3",
+    "latest": "18.3.3",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/@types/react"
+  },
+  "@types/react-dom": {
+    "current": "18.2.19",
+    "wanted": "18.3.0",
+    "latest": "18.3.0",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/@types/react-dom"
+  },
+  "@typescript-eslint/eslint-plugin": {
+    "current": "7.0.2",
+    "wanted": "7.13.1",
+    "latest": "7.13.1",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/@typescript-eslint/eslint-plugin"
+  },
+  "@typescript-eslint/parser": {
+    "current": "7.0.2",
+    "wanted": "7.13.1",
+    "latest": "7.13.1",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/@typescript-eslint/parser"
+  },
+  "autoprefixer": {
+    "current": "10.4.17",
+    "wanted": "10.4.19",
+    "latest": "10.4.19",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/autoprefixer"
+  },
+  "eslint": {
+    "current": "8.56.0",
+    "wanted": "8.57.0",
+    "latest": "9.5.0",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/eslint"
+  },
+  "eslint-config-next": {
+    "current": "14.1.0",
+    "wanted": "14.2.4",
+    "latest": "14.2.4",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/eslint-config-next"
+  },
+  "husky": {
+    "current": "8.0.3",
+    "wanted": "8.0.3",
+    "latest": "9.0.11",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/husky"
+  },
+  "lint-staged": {
+    "current": "15.2.2",
+    "wanted": "15.2.7",
+    "latest": "15.2.7",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/lint-staged"
+  },
+  "next": {
+    "current": "14.1.0",
+    "wanted": "14.2.4",
+    "latest": "14.2.4",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/next"
+  },
+  "postcss": {
+    "current": "8.4.35",
+    "wanted": "8.4.38",
+    "latest": "8.4.38",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/postcss"
+  },
+  "prettier": {
+    "current": "3.2.5",
+    "wanted": "3.3.2",
+    "latest": "3.3.2",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/prettier"
+  },
+  "prettier-plugin-tailwindcss": {
+    "current": "0.5.11",
+    "wanted": "0.5.14",
+    "latest": "0.6.5",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/prettier-plugin-tailwindcss"
+  },
+  "react": {
+    "current": "18.2.0",
+    "wanted": "18.3.1",
+    "latest": "18.3.1",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/react"
+  },
+  "react-dom": {
+    "current": "18.2.0",
+    "wanted": "18.3.1",
+    "latest": "18.3.1",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/react-dom"
+  },
+  "tailwindcss": {
+    "current": "3.4.1",
+    "wanted": "3.4.4",
+    "latest": "3.4.4",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/tailwindcss"
+  },
+  "typescript": {
+    "current": "5.3.3",
+    "wanted": "5.5.2",
+    "latest": "5.5.2",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/typescript"
+  }
+}
