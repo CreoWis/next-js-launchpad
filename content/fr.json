@@ -1,0 +1,49 @@
+{
+  "Home": {
+    "title": "NextJS Launchpad",
+    "description": "Nous avons créé un modèle avec les outils essentiels et les meilleures pratiques pour que vous puissiez vous concentrer sur le développement de votre projet NextJS.",
+    "edit_prompt": "Modifier",
+    "edit_file": "app/page.tsx",
+    "edit_to_start": "pour commencer",
+    "tech_stack": {
+      "nextjs": {
+        "name": "Next JS",
+        "description": "Exploitez la puissance de Next.js pour des applications React rendues côté serveur"
+      },
+      "typescript": {
+        "name": "TypeScript",
+        "description": "Améliorez votre expérience de développement grâce au typage statique de TypeScript"
+      },
+      "tailwindcss": {
+        "name": "Tailwind CSS",
+        "description": "Créez rapidement des designs personnalisés avec l'approche utilitaire de Tailwind CSS"
+      },
+      "eslint": {
+        "name": "ESLint",
+        "description": "Appliquez des normes de qualité de code et détectez les erreurs tôt avec ESLint"
+      },
+      "prettier": {
+        "name": "Prettier",
+        "description": "Gardez votre code propre et cohérent avec le formatage automatique de Prettier"
+      },
+      "prettier_plugin_tailwindcss": {
+        "name": "Plugin Prettier Tailwindcss",
+        "description": "Tri automatique des classes Tailwind avec le plugin officiel Prettier"
+      },
+      "prettier_plugin_sort_imports": {
+        "name": "Plugin Prettier Tri des Imports",
+        "description": "Triez les imports par ordre alphabétique pour une meilleure lisibilité, en particulier dans les grands projets"
+      },
+      "husky": {
+        "name": "Husky",
+        "description": "Assurez la qualité du code et empêchez les mauvais commits avec les hooks pré-commit de Husky"
+      }
+    },
+    "footer_text": "Une initiative Open Source de CreoWis Technologies."
+  },
+  "NotFound": {
+    "404": "404",
+    "dosent_exist_text": "Oups! La page que vous cherchez n'existe pas.",
+    "go_to_home": "Retour à l'accueil"
+  }
+}
