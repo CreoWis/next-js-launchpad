@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "next": "15.1.4",
+    "next-intl": "^3.26.3",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
