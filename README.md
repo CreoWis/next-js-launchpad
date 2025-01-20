@@ -36,6 +36,21 @@ Say goodbye to setup headaches and hello to consistent code quality. Elevate you
 - **Prettier Plugin Tailwindcss**: Automatic sorting of tailwind classnames using the official prettier plugin.
 - **Prettier Plugin Sort Imports**: Organize import declarations alphabetically within groups, which can help improve readability when working on larger projects.
 - **Husky**: Ensure code quality and prevent bad commits with pre-commit hooks powered by Husky.
+-  **Internationalization (i18n)**: Built-in support for multiple languages using next-intl, making it easy to create multilingual applications with locale-specific routing and translations.
+  
+## Internationalization (i18n)
+NextJsLaunchpad comes with built-in internationalization support using next-intl. This integration provides:
+
+- Route-based locale handling with `/[locale]/` directory structure
+- Easy-to-use translation hooks with `useTranslations` in server and client components.
+
+Translation files are located in:
+```bash
+content/
+  ├── en.json
+  ├── fr.json
+  └── [other-locales].json
+```  
 
 ## Getting Started
 
