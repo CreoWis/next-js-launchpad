@@ -43,7 +43,7 @@
   },
   "NotFound": {
     "404": "404",
-    "dosent_exist_text": "Oops! The page you're looking for doesn't exist.",
+    "dosen't_exist_text": "Oops! The page you're looking for doesn't exist.",
     "go_to_home": "Go back to Home"
   }
 }
