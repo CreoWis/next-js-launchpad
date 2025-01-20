@@ -51,7 +51,8 @@ content/
   ├── fr.json
   └── [other-locales].json
 ```  
-How to add a new language support:
+#### How to add a new language support:
+
 To add a new language, we have to add the language JSON file to the content directory, which is in the root directory, that is our first step.
 
 After that, we have to add the newly added language to the locales array in the navigation.ts file. Below is the content of the navigation.ts file, where we need to add the newly added language to the locales array:
@@ -70,8 +71,28 @@ export const routing = defineRouting({
 export const {Link, redirect, usePathname, useRouter, getPathname} =
   createNavigation(routing);
 ```
-## Getting Started
+#### Using Strings from Language Files
 
+To use strings from a language file in both **client and server** components, use the `useTranslations` hook.
+
+#### Steps:
+
+1. **Import `useTranslations`:**
+
+   ```javascript
+   import { useTranslations } from 'next-intl';
+   ```
+2. **Initialize useTranslations with a section:**
+   ```javascript
+   const t = useTranslations('Home');
+   ```
+3. **Fetch and use translations:**
+
+   ```javascript
+   <h1>{t('welcomeMessage')}</h1>
+   ```
+   
+## Getting Started
 > Usage
 
 ```bash
