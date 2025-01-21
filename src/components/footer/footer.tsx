@@ -1,12 +1,16 @@
+"use client";
+
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
+    const t = useTranslations('Home');
+  
   return (
     <footer className="items-center justify-evenly bg-gray-300 py-4 text-center text-black lg:flex">
       <Link href="https://www.creowis.com/" target="_blank">
-        &copy; {currentYear} An Open Source initiative from CreoWis
-        Technologies.
+        &copy; {currentYear} {t("footer_text")}
       </Link>
       <div className="mt-4 flex justify-center gap-4 lg:mt-0 lg:gap-8">
         {SOCIAL_LINKS.map((item, id) => (
