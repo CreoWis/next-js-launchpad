@@ -40,7 +40,7 @@ Say goodbye to setup headaches and hello to consistent code quality. Elevate you
     ```bash
    -  Start the application using this Docker command:
    
-    docker compose up
+    docker-compose up
 
     The command will:
     1. Build the application container
