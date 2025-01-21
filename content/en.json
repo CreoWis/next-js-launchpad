@@ -1,0 +1,49 @@
+{
+  "Home": {
+    "title": "NextJS Launchpad",
+    "description": "We created a boilerplate with essential tools and best practices so you can focus on building your NextJS project.",
+    "edit_prompt": "Edit",
+    "edit_file": "app/page.tsx",
+    "edit_to_start": "to start",
+    "tech_stack": {
+      "nextjs": {
+        "name": "Next JS",
+        "description": "Utilize the power of Next.js for server-rendered React applications"
+      },
+      "typescript": {
+        "name": "TypeScript",
+        "description": "Enhance your development experience with TypeScript's static typing"
+      },
+      "tailwindcss": {
+        "name": "Tailwind CSS",
+        "description": "Rapidly build custom designs with Tailwind CSS's utility-first approach"
+      },
+      "eslint": {
+        "name": "ESLint",
+        "description": "Enforce code quality standards and catch errors early with ESLint"
+      },
+      "prettier": {
+        "name": "Prettier",
+        "description": "Keep your codebase clean and consistent with automatic code formatting using Prettier."
+      },
+      "prettier_plugin_tailwindcss": {
+        "name": "Prettier Plugin Tailwindcss",
+        "description": "Automatic sorting of tailwind classnames using the official prettier plugin"
+      },
+      "prettier_plugin_sort_imports": {
+        "name": "Prettier Plugin Sort Imports",
+        "description": "Sort imports alphabetically for better readability, especially in larger projects"
+      },
+      "husky": {
+        "name": "Husky",
+        "description": "Ensure code quality and prevent bad commits with pre-commit hooks powered by Husky"
+      }
+    },
+    "footer_text": "An Open Source initiative from CreoWis Technologies."
+  },
+  "NotFound": {
+    "404": "404",
+    "dosen't_exist_text": "Oops! The page you're looking for doesn't exist.",
+    "go_to_home": "Go back to Home"
+  }
+}
