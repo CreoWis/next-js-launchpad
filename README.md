@@ -36,7 +36,26 @@ Say goodbye to setup headaches and hello to consistent code quality. Elevate you
 - **Prettier Plugin Tailwindcss**: Automatic sorting of tailwind classnames using the official prettier plugin.
 - **Prettier Plugin Sort Imports**: Organize import declarations alphabetically within groups, which can help improve readability when working on larger projects.
 - **Husky**: Ensure code quality and prevent bad commits with pre-commit hooks powered by Husky.
+- **Docker Support**: Complete Docker configuration.
+    ```bash
+   -  Start the application using this Docker command:
+   
+    docker-compose up
+
+    The command will:
+    1. Build the application container
+    2. Install all dependencies
+    3. Start the development server
+    4. Make the application available on localhost
+    ```
+
 -  **Internationalization (i18n)**: Built-in support for multiple languages using next-intl, making it easy to create multilingual applications with locale-specific routing and translations.
+  ## Getting Started
+> Usage
+
+```bash
+npx create-next-app -e https://github.com/CreoWis/next-js-launchpad
+```
   
 ## Internationalization (i18n)
 NextJsLaunchpad comes with built-in internationalization support using next-intl. This integration provides:
@@ -92,12 +111,6 @@ To use strings from a language file in both **client and server** components, us
    <h1>{t('welcomeMessage')}</h1>
    ```
    
-## Getting Started
-> Usage
-
-```bash
-npx create-next-app -e https://github.com/CreoWis/next-js-launchpad
-```
 
 <!-- Project should be public for the above command to work -->
 

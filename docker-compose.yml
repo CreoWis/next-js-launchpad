@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  demo-app-name:
+    build:
+      context: .  # Path to the directory containing the Dockerfile
+      dockerfile: Dockerfile  # Name of the Dockerfile (if not named "Dockerfile", specify it here)
+    # env_file: 
+    #   - .env
+    ports:
+      - "3000:3000"  # Expose port 3000 on the host, mapping to port 3000 in the container
