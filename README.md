@@ -1,6 +1,9 @@
 <a href="https://github.com/CreoWis/next-js-launchpad/blob/master/LICENSE" target="blank"><img src="https://img.shields.io/github/license/CreoWis/next-js-launchpad?style=flat-square" alt="License" /></a>
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <a href="https://github.com/CreoWis/next-js-launchpad/fork" target="blank">
 <img src="https://img.shields.io/github/forks/CreoWis/next-js-launchpad?style=flat-square" alt="next-js-launchpad forks"/>
@@ -37,44 +40,51 @@ Say goodbye to setup headaches and hello to consistent code quality. Elevate you
 - **Prettier Plugin Sort Imports**: Organize import declarations alphabetically within groups, which can help improve readability when working on larger projects.
 - **Husky**: Ensure code quality and prevent bad commits with pre-commit hooks powered by Husky.
 - **Docker Support**: Complete Docker configuration.
-    ```bash
-   -  Start the application using this Docker command:
-   
-    docker-compose up
 
-    The command will:
-    1. Build the application container
-    2. Install all dependencies
-    3. Start the development server
-    4. Make the application available on localhost
-    ```
+  ```bash
+  -  Start the application using this Docker command:
 
--  **Internationalization (i18n)**: Built-in support for multiple languages using next-intl, making it easy to create multilingual applications with locale-specific routing and translations.
-  ## Getting Started
+  docker-compose up
+
+  The command will:
+  1. Build the application container
+  2. Install all dependencies
+  3. Start the development server
+  4. Make the application available on localhost
+  ```
+
+- **Internationalization (i18n)**: Built-in support for multiple languages using next-intl, making it easy to create multilingual applications with locale-specific routing and translations.
+
+## Getting Started
+
 > Usage
 
 ```bash
 npx create-next-app -e https://github.com/CreoWis/next-js-launchpad
 ```
-  
+
 ## Internationalization (i18n)
+
 NextJsLaunchpad comes with built-in internationalization support using next-intl. This integration provides:
 
 - Route-based locale handling with `/[locale]/` directory structure
 - Easy-to-use translation hooks with `useTranslations` in server and client components.
 
 Translation files are located in:
+
 ```bash
 content/
   ├── en.json
   ├── fr.json
   └── [other-locales].json
-```  
+```
+
 #### How to add a new language support:
 
 To add a new language, we have to add the language JSON file to the content directory, which is in the root directory, that is our first step.
 
 After that, we have to add the newly added language to the locales array in the navigation.ts file. Below is the content of the navigation.ts file, where we need to add the newly added language to the locales array:
+
 ```bash
 import {defineRouting} from 'next-intl/routing';
 import {createNavigation} from 'next-intl/navigation';
@@ -82,7 +92,7 @@ import {createNavigation} from 'next-intl/navigation';
 export const routing = defineRouting({
   // A list of all locales that are supported
   locales: ['en', 'fr', 'newLanguage'], // Add the new language code here
- 
+
   // Used when no locale matches
   defaultLocale: 'en'
 });
@@ -90,6 +100,7 @@ export const routing = defineRouting({
 export const {Link, redirect, usePathname, useRouter, getPathname} =
   createNavigation(routing);
 ```
+
 #### Using Strings from Language Files
 
 To use strings from a language file in both **client and server** components, use the `useTranslations` hook.
@@ -101,6 +112,7 @@ To use strings from a language file in both **client and server** components, us
    ```javascript
    import { useTranslations } from 'next-intl';
    ```
+
 2. **Initialize useTranslations with a section:**
    ```javascript
    const t = useTranslations('Home');
@@ -110,7 +122,38 @@ To use strings from a language file in both **client and server** components, us
    ```javascript
    <h1>{t('welcomeMessage')}</h1>
    ```
-   
+
+## Playwright E2E Testing
+
+NextJsLaunchpad includes Playwright for robust end-to-end testing. This integration provides:
+
+- **Headless and UI Testing**: Run tests in both headless mode for automation and UI mode for debugging.
+- **Cross-Browser Compatibility**: Test on Chromium, Firefox, and WebKit.
+- **API and Component Testing**: Supports API calls and frontend component interactions.
+
+### Running Playwright Tests
+
+To execute Playwright tests, use:
+
+```shell
+npm run playwright
+```
+
+### Playwright Configuration
+
+Test settings are defined in:
+
+```plaintext
+/playwright.config.ts
+```
+
+### Test Files
+
+Playwright tests are located in:
+
+```plaintext
+/__tests__/e2e/
+```
 
 <!-- Project should be public for the above command to work -->
 
