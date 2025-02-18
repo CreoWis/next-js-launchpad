@@ -11,7 +11,8 @@
     "prepare": "husky install",
     "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
-    "lint-prettier": "npm run lint:check && npm run prettier:check"
+    "lint-prettier": "npm run lint:check && npm run prettier:check",
+    "playwright": "npx playwright install && npx playwright install-deps && npx playwright test"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": "npm run lint-prettier"
