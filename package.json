@@ -12,7 +12,8 @@
     "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "lint-prettier": "npm run lint:check && npm run prettier:check",
-    "vitest": "vitest"
+    "vitest": "vitest",
+    "playwright": "npx playwright install && npx playwright install-deps && npx playwright test"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": "npm run lint-prettier"
@@ -27,6 +28,7 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.2.0",
+    "@playwright/test": "^1.50.1",
     "@types/node": "^20.11.19",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
