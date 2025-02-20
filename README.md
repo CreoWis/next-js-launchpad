@@ -155,6 +155,31 @@ Playwright tests are located in:
 /__tests__/e2e/
 ```
 
+## Vitest Unit & Integration Testing
+
+NextJsLaunchpad includes Vitest for fast and efficient unit and integration testing. This setup provides:
+
+- **Lightning-Fast Execution**: Runs tests in parallel for speed.
+- **JSDOM Environment**: Simulates a browser-like environment for React components.
+- **TypeScript Support**: Fully compatible with TypeScript for better type safety.
+- **Mocking & Snapshot Testing**: Supports mocking API calls and UI snapshots.
+
+### Running Vitest Tests
+
+To execute Vitest tests, use:
+
+```shell
+npm run vitest
+```
+
+### Vitest Configuration
+
+Test settings are defined in:
+
+```plaintext
+/vitest.config.ts
+```
+
 <!-- Project should be public for the above command to work -->
 
 ## Folder Structure
