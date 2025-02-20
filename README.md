@@ -177,7 +177,7 @@ npm run vitest
 Test settings are defined in:
 
 ```plaintext
-/vitest.config.ts
+/vitest.config.mts
 ```
 
 <!-- Project should be public for the above command to work -->
