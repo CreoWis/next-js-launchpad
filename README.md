@@ -31,14 +31,14 @@ Say goodbye to setup headaches and hello to consistent code quality. Elevate you
 
 ## ✨ Features
 
-- **Next.js**: Utilize the power of Next.js for server-rendered React applications.
+- **Next.js 16**: The latest Next.js with full Turbopack support for lightning-fast builds and development.
 - **TypeScript**: Enhance your development experience with TypeScript's static typing.
-- **Tailwind CSS**: Rapidly build custom designs with Tailwind CSS's utility-first approach.
-- **ESLint**: Enforce code quality standards and catch errors early with ESLint.
+- **Tailwind CSS 4**: CSS-first configuration with the new `@import "tailwindcss"` syntax — no more `tailwind.config.ts`.
+- **ESLint 10**: Modern flat config (`eslint.config.mjs`) with native Next.js and TypeScript support.
 - **Prettier**: Keep your codebase clean and consistent with automatic code formatting using Prettier.
 - **Prettier Plugin Tailwindcss**: Automatic sorting of tailwind classnames using the official prettier plugin.
 - **Prettier Plugin Sort Imports**: Organize import declarations alphabetically within groups, which can help improve readability when working on larger projects.
-- **Husky**: Ensure code quality and prevent bad commits with pre-commit hooks powered by Husky.
+- **Husky 9**: Streamlined pre-commit hooks — no more shell boilerplate in hook files.
 - **Docker Support**: Complete Docker configuration.
 
   ```bash
@@ -53,7 +53,15 @@ Say goodbye to setup headaches and hello to consistent code quality. Elevate you
   4. Make the application available on localhost
   ```
 
-- **Internationalization (i18n)**: Built-in support for multiple languages using next-intl, making it easy to create multilingual applications with locale-specific routing and translations.
+- **Internationalization (i18n)**: Built-in support for multiple languages using next-intl v4, making it easy to create multilingual applications with locale-specific routing and translations.
+
+## Prerequisites
+
+Node.js `^20.19.0 || >=22.12.0` is required. Verify with:
+
+```bash
+node --version
+```
 
 ## Getting Started
 
@@ -65,7 +73,7 @@ npx create-next-app -e https://github.com/CreoWis/next-js-launchpad
 
 ## Internationalization (i18n)
 
-NextJsLaunchpad comes with built-in internationalization support using next-intl. This integration provides:
+NextJsLaunchpad comes with built-in internationalization support using next-intl v4. This integration provides:
 
 - Route-based locale handling with `/[locale]/` directory structure
 - Easy-to-use translation hooks with `useTranslations` in server and client components.
@@ -78,6 +86,8 @@ content/
   ├── fr.json
   └── [other-locales].json
 ```
+
+The request configuration is located at `src/i18n/request.ts` (next-intl v4 convention).
 
 #### How to add a new language support:
 
@@ -99,6 +109,7 @@ export const routing = defineRouting({
 
 export const {Link, redirect, usePathname, useRouter, getPathname} =
   createNavigation(routing);
+```
 ```
 
 #### Using Strings from Language Files
@@ -182,6 +193,43 @@ Test settings are defined in:
 
 <!-- Project should be public for the above command to work -->
 
+## Tailwind CSS v4
+
+NextJsLaunchpad uses Tailwind CSS v4 with its new CSS-first configuration approach. No more `tailwind.config.ts` — all configuration lives in CSS.
+
+Tailwind is imported in `src/styles/globals.css`:
+
+```css
+@import "tailwindcss";
+```
+
+Custom theme values (colors, fonts, etc.) are defined using `@theme` blocks in CSS:
+
+```css
+@theme {
+  --color-brand: oklch(0.7 0.2 240);
+  --font-sans: "Inter", sans-serif;
+}
+```
+
+## ESLint 10 Flat Config
+
+NextJsLaunchpad uses ESLint 10 with the new [flat config](https://eslint.org/docs/latest/use/configure/configuration-files) format. Configuration is in `eslint.config.mjs`:
+
+```js
+import nextConfig from 'eslint-config-next/core-web-vitals';
+import nextTypescript from 'eslint-config-next/typescript';
+import prettierConfig from 'eslint-config-prettier';
+
+export default [
+  { ignores: ['.next/**', 'node_modules/**'] },
+  ...nextConfig,
+  ...nextTypescript,
+  prettierConfig,
+  { rules: { /* custom rules */ } },
+];
+```
+
 ## Folder Structure
 
 ```bash
@@ -200,6 +248,8 @@ Test settings are defined in:
     ├── data
     ├── db
     ├── hooks
+    ├── i18n
+    │   └── request.ts
     ├── modules
     ├── queries
     ├── services
@@ -214,6 +264,8 @@ Test settings are defined in:
 **lib**: This folder may contain utility functions that can be converted later into packages that are used across multiple applications.
 
 **public**: Self explanatory.
+
+**src/i18n**: Contains next-intl v4 configuration. `request.ts` is the request configuration file that handles locale resolution and message loading.
 
 **src/components**: This directory contains your UI components. It's further subdivided into ui for generic UI components and shared for components that might be reused across different parts of your application.
 
