@@ -6,7 +6,6 @@ const withNextIntl = createNextIntlPlugin();
 const nextConfig = {
   output: 'standalone',
   reactStrictMode: true,
-  swcMinify: true,
   productionBrowserSourceMaps: true,
 };
 

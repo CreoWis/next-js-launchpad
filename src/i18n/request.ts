@@ -1,5 +1,6 @@
 import { getRequestConfig } from 'next-intl/server';
-import { routing } from './navigation';
+
+import { routing } from '../navigation';
 
 export default getRequestConfig(async ({ requestLocale }) => {
   let locale = await requestLocale;
@@ -10,7 +11,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   }
 
   // Load messages for the current locale
-  const messages = (await import(`../content/${locale}.json`)).default;
+  const messages = (await import(`../../content/${locale}.json`)).default;
 
   return {
     locale, // Return the validated locale
