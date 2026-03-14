@@ -1,7 +1,7 @@
 <a href="https://github.com/CreoWis/next-js-launchpad/blob/master/LICENSE" target="blank"><img src="https://img.shields.io/github/license/CreoWis/next-js-launchpad?style=flat-square" alt="License" /></a>
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <a href="https://github.com/CreoWis/next-js-launchpad/fork" target="blank">
 <img src="https://img.shields.io/github/forks/CreoWis/next-js-launchpad?style=flat-square" alt="next-js-launchpad forks"/>
@@ -373,6 +373,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://tapasadhikary.com"><img src="https://avatars.githubusercontent.com/u/3633137?v=4?s=100" width="100px;" alt="Tapas Adhikary"/><br /><sub><b>Tapas Adhikary</b></sub></a><br /><a href="https://github.com/CreoWis/next-js-launchpad/pulls?q=is%3Apr+reviewed-by%3Aatapas" title="Reviewed Pull Requests">👀</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://koustov.com"><img src="https://avatars.githubusercontent.com/u/7145967?v=4?s=100" width="100px;" alt="Koustov"/><br /><sub><b>Koustov</b></sub></a><br /><a href="#ideas-koustov" title="Ideas, Planning, & Feedback">🤔</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/parthib2004"><img src="https://avatars.githubusercontent.com/u/146326397?v=4?s=100" width="100px;" alt="Parthib Sarkar"/><br /><sub><b>Parthib Sarkar</b></sub></a><br /><a href="https://github.com/CreoWis/next-js-launchpad/commits?author=parthib2004" title="Code">💻</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/prachi-sahu-codes"><img src="https://avatars.githubusercontent.com/u/87253962?v=4?s=100" width="100px;" alt="Prachi Sahu"/><br /><sub><b>Prachi Sahu</b></sub></a><br /><a href="https://github.com/CreoWis/next-js-launchpad/commits?author=prachi-sahu-codes" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
