@@ -1,0 +1,37 @@
+{
+  "@types/node": {
+    "current": "25.4.0",
+    "wanted": "25.5.0",
+    "latest": "25.5.0",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/@types/node"
+  },
+  "@vitejs/plugin-react": {
+    "current": "5.1.4",
+    "wanted": "5.2.0",
+    "latest": "6.0.1",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/@vitejs/plugin-react"
+  },
+  "@vitest/ui": {
+    "current": "4.0.18",
+    "wanted": "4.1.0",
+    "latest": "4.1.0",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/@vitest/ui"
+  },
+  "lint-staged": {
+    "current": "16.3.3",
+    "wanted": "16.4.0",
+    "latest": "16.4.0",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/lint-staged"
+  },
+  "vitest": {
+    "current": "4.0.18",
+    "wanted": "4.1.0",
+    "latest": "4.1.0",
+    "dependent": "next-js-launchpad",
+    "location": "/home/runner/work/next-js-launchpad/next-js-launchpad/node_modules/vitest"
+  }
+}
